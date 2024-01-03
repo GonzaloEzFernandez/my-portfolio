@@ -11,7 +11,7 @@ function AboutMe() {
 			<div className="md:w-1/2">
 				<img
 					className=" hidden md:block	 w-[600px] h-[600px] object-cover"
-					src="src/img/businessman-explain-pose-character-design-free-vector-removebg-preview.png"
+					src="./img/businessman-explain-pose-character-design-free-vector-removebg-preview.png"
 					alt="front-pick"
 				/>
 			</div>
@@ -22,7 +22,7 @@ function AboutMe() {
 							<div className="flex items-center justify-center">
 								<img
 									className="rounded-full w-[100px] h-[150px] object-cover md:hidden"
-									src="src/img/businessman-explain-pose-character-design-free-vector-removebg-preview.png"
+									src="./img/businessman-explain-pose-character-design-free-vector-removebg-preview.png"
 									alt="gonza-movil"
 								/>
 								<h3 className="text-5xl font-semibold dark:text-bluePrimary md:py-4">

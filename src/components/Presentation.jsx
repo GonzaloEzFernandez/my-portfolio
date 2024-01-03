@@ -29,8 +29,8 @@ function Presentation() {
 				<div className=" font-bold text-5xl hidden md:block">
 					{changeLanguage === "es" ? (
 						<h1>
-							Hola todos!👋 Soy Gonzalo Fernández{" "}
-							<span className=" text-bluePrimary">.</span>{" "}
+							Hola todos!👋 Soy Gonzalo Fernández
+							<span className=" text-bluePrimary">.</span>
 						</h1>
 					) : (
 						<h1>Hi there!👋 I`am Gonzalo Fernández</h1>
@@ -44,7 +44,7 @@ function Presentation() {
 					</h1>
 					<img
 						className="rounded-full w-[120px] h-[150px] object-cover md:hidden"
-						src="src/img/businessman-explain-pose-character-design-free-vector-removebg-preview.png"
+						src="./img/businessman-explain-pose-character-design-free-vector-removebg-preview.png"
 						alt="gonza-movil"
 					/>
 				</div>
@@ -60,7 +60,7 @@ function Presentation() {
 					) : (
 						<p>
 							Enthusiastic about programming and countinuus learning.
-							<strong> Front-end developer, </strong>{" "}
+							<strong> Front-end developer, </strong>
 							<em className="text-bluePrimary">
 								on the way to full stack developer
 							</em>
@@ -81,7 +81,7 @@ function Presentation() {
 			<div className="flex md:w-1/2">
 				<img
 					className=" hidden md:block	 w-[600px] h-[600px] object-cover "
-					src="src/img/businessman-explain-pose-character-design-free-vector-removebg-preview.png"
+					src="./img/businessman-explain-pose-character-design-free-vector-removebg-preview.png"
 					alt="front-pick"
 				/>
 			</div>
