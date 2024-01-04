@@ -14,17 +14,17 @@ function Presentation() {
 
 	return (
 		<div
-			className={`flex px-3 h-[75vh] w-full  border-bluePrimary dark:text-gray-90000 md:px-10 lg:px-32 md:items-center lg:h-[98vh] md:h-auto relative ${
+			className={`flex px-3 h-[100vh] w-full dark:text-grayPrimary  md:px-10 lg:px-32 md:items-center relative ${
 				changeTheme === "dark"
-					? "dark:bg-gradient-to-bl from-[#1f5088]  via-darkBluePrimary  to-[#13111C]  dark:border-grayPrimary"
-					: "bg-gradient-to-tr from-[#e0f5ff] from-20% via-[#FEFDFF] via-30% to-[#e0f5ff] to-90%"
+					? "dark:bg-gradient-to-bl from-[#1f5088]  via-darkBluePrimary  to-[#13111C]"
+					: "bg-gradient-to-bl from-[#E9F6FE] from via-[#E9F6FE] via to-[#FEFDFF]"
 			}`}
 		>
 			<motion.div
-				initial={{ y: 80, opacity: 0 }}
+				initial={{ y: 100, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
-				transition={{ duration: 0.4, delay: 0.1 }}
-				className="flex flex-col gap-4 w-full dark:text-[#FFFFFF]  justify-center md:w-1/2"
+				transition={{ duration: 0.4, delay: 0.2 }}
+				className="flex flex-col gap-4 w-full dark:text-[#FFFF] justify-center md:w-1/2"
 			>
 				<div className=" font-bold text-5xl hidden md:block">
 					{changeLanguage === "es" ? (
@@ -48,11 +48,11 @@ function Presentation() {
 						alt="gonza-movil"
 					/>
 				</div>
-				<div className="dark:text-grayPrimary text-xl">
+				<div className="dark:text-grayPrimary text-gray-600 text-xl">
 					{changeLanguage === "es" ? (
 						<p>
 							Entusiasta de la programacion y del aprendizaje continuo.
-							<strong> Desarrollador front-end, </strong>
+							<strong className="text-[#000] dark:text-grayPrimary "> Desarrollador front-end, </strong>
 							<em className="text-bluePrimary">
 								rumbo a desarrollador full stack.
 							</em>
@@ -69,13 +69,18 @@ function Presentation() {
 					)}
 				</div>
 				<div className="flex w-[300px] items-center justify-start gap-6 text-lg text-gray-600/50 dark:text-gray-200/50 font-semibold">
-					<Link className="pr-4 border-r-2 border-bluePrimary hover:text-bluePrimary ">
+					<Link
+						to="https://www.linkedin.com/in/gonzalo-fern%C3%A1ndez-a67596299/"
+						className="px-4 border-x-2 border-bluePrimary hover:text-bluePrimary "
+					>
 						Linked In
 					</Link>
-					<Link className=" pr-4 border-r-2 border-bluePrimary hover:text-bluePrimary  ">
+					<Link
+						to="https://github.com/GonzaloEzFernandez"
+						className=" pr-4 border-r-2 border-bluePrimary hover:text-bluePrimary "
+					>
 						Git Hub
 					</Link>
-					<Link className="hover:text-bluePrimary pr-4">Email</Link>
 				</div>
 			</motion.div>
 			<div className="flex md:w-1/2">
@@ -90,7 +95,7 @@ function Presentation() {
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.9 }}
 					onClick={handleOpenSetting}
-					className="fixed bottom-10 right-10 bg-gray-200 p-2 rounded-full  "
+					className="fixed bottom-10 right-10 bg-[#ffff] text-darkBluePrimary p-2 rounded-full group transition-colors  "
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +104,7 @@ function Presentation() {
 						strokeWidth={1.5}
 						stroke="currentColor"
 						dataSlot="icon"
-						className="w-9 h-9 text-darkBluePrimary  hover:text-bluePrimary"
+						className="w-9 h-9 group-hover:scale-100"
 					>
 						<path
 							strokeLinecap="round"

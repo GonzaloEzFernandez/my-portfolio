@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { motion } from "framer-motion"
+
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -29,7 +29,7 @@ function ProyectSection({ description, images, proyectsImages, inverted }) {
 
 	return (
 		<div
-			className={`flex items-center justify-center w-full flex-col mb-10 rounded-xl shadow lg:flex-row  ${
+			className={`flex items-center justify-center w-full flex-col mb-10 py-4 rounded-xl text-gray-600 shadow lg:flex-row  ${
 				inverted
 					? "bg-gray-200/75 dark:bg-gradient-to-r from-darkBluePrimary  to-[#13111C] border-double border-bluePrimary border-l-[8px] "
 					: "bg-gray-200/75 dark:bg-gradient-to-r from-[#13111C] to-darkBluePrimary border-double border-bluePrimary border-r-[8px]"
@@ -45,7 +45,7 @@ function ProyectSection({ description, images, proyectsImages, inverted }) {
 					onMouseLeave={handleLinkLeave}
 					className="border-double w-full flex items-center justify-center relative rounded-lg "
 				>
-					<Slider className="w-[290px] sm:w-[600px] lg:w-full" {...settings}>
+					<Slider className="h-full w-[290px] sm:w-[600px] lg:w-full" {...settings}>
 						{proyectsImages.map((proyectImage, index) => (
 							<div className="w-full h-full" key={index}>
 								<img
@@ -59,8 +59,8 @@ function ProyectSection({ description, images, proyectsImages, inverted }) {
 					<div className=" flex justify-center items-center absolute inset-0  backdrop-blur-sm  opacity-0 transition-opacity hover:opacity-90 rounded-lg">
 						{isHover && (
 							<Link
+								to="https://gonzaloezfernandez.github.io/Ecommerce-express/"
 								className="py-6 px-10 absolute text-ms rounded-md z-10 text-gray-300 hover:text-[#FFFF] hover:text-[18px] transition-all font-semibold dark:bg-[#13111C]"
-									
 							>
 								Visitar Proyecto
 							</Link>

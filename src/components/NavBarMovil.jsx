@@ -35,7 +35,7 @@ function NavBarMovil() {
 			)}
 
 			{expand && (
-				<div className="text-xl font-semibold  h-screen w-80 bg-darkBluePrimary fixed right-0 top-0 -transale-x-100 z-20 transition-all ease-in-out">
+				<div className="text-xl font-semibold  h-screen w-64 bg-darkBluePrimary fixed right-0 top-0 -transale-x-100 z-20 transition-all ease-in-out">
 					<button onClick={handleClose} className="ml-[265px] pt-4">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

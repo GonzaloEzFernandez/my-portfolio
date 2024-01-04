@@ -11,8 +11,8 @@ function NavBar() {
 			initial={{ y: -80, opacity: 0 }}
 			animate={{ y: 0, opacity: 1 }}
 			transition={{ duration: 0.4, delay:0.1  }}
-			className={`fixed px-8 md:px-10 flex items-center  w-full justify-between h-[70px] dark:text-grayPrimary  lg:px-32 z-20 ${
-				changeTheme === "light" && "bg-bluePrimary  text-black"
+			className={`fixed px-8 md:px-10 flex items-center  w-full justify-between h-[70px] dark:text-grayPrimary text-gray-600  lg:px-32 z-20 ${
+				changeTheme === "light" && "  text-black"
 			}`}
 		>
 			<div>
@@ -23,7 +23,7 @@ function NavBar() {
 						viewBox="0 0 24 24"
 						strokeWidth={1.5}
 						stroke="currentColor"
-						className="w-9 h-9 dark:hover:text-bluePrimary"
+						className="w-9 h-9 dark:hover:text-bluePrimary hover:text-bluePrimary"
 					>
 						<path
 							strokeLinecap="round"
@@ -35,13 +35,13 @@ function NavBar() {
 			</div>
 			<div className="relative">
 				<div className="hidden lg:flex lg:items-center  ">
-					<Link className="  dark:hover:text-bluePrimary px-[23px] font-semibold text-[17px]">
+					<Link className="  dark:hover:text-bluePrimary hover:text-bluePrimary px-[23px] font-semibold text-[17px]">
 						{changeLanguage === "es" ? "Inicio" : "Home"}
 					</Link>
-					<Link className="  dark:hover:text-bluePrimary  p-[23px] font-semibold text-[17px]">
+					<Link className="  dark:hover:text-bluePrimary hover:text-bluePrimary  p-[23px] font-semibold text-[17px]">
 						{changeLanguage === "es" ? "Proyectos" : "Proyects"}
 					</Link>
-					<Link className="  dark:hover:text-bluePrimary  p-[23px] font-semibold text-[17px]">
+					<Link className="  dark:hover:text-bluePrimary hover:text-bluePrimary  p-[23px] font-semibold text-[17px]">
 						{changeLanguage === "es" ? "Sobre Mí" : "About Me"}
 					</Link>
 				</div>

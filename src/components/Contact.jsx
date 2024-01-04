@@ -34,18 +34,18 @@ function Contact() {
 
 	return (
 		<div
-			className={`flex flex-col justify-start items-center h-auto dark:text-white w-full lg:p-8  border-bluePrimary ${
+			className={`flex flex-col justify-start items-center h-auto dark:text-white w-full lg:p-8  ${
 				changeTheme === "dark"
-				? "dark:bg-gradient-to-tr from-[#31132A] via-[#13111C] to-darkBluePrimary  dark:border-grayPrimary"
-				: "bg-gradient-to-tl from-slate-100 to-slate-500/50"
+					? "dark:bg-gradient-to-br from-darkBluePrimary via-[#13111C] to-[#31132A]"
+					: "bg-gradient-to-br from-[#e0f5ff]  from- via-[#FEFDFF] to-[#ffdada] "
 			} `}
 		>
 			<form
 				ref={form}
 				onSubmit={sendEmail}
-				className="w-screen h-full lg:w-4/6 px-16 py-8 rounded-lg lg:border-double border-[6px] lg:border-bluePrimary dark:bg-darkBluePrimary"
+				className="w-screen h-full lg:w-4/6 px-16 py-8 rounded-lg lg:border-double lg:border-[6px] lg:border-bluePrimary"
 			>
-				<h3 className="text-5xl text-center font-semibold py-4 dark:text-bluePrimary">
+				<h3 className="text-5xl text-center font-semibold py-4 ">
 					{changeLanguage === "es" ? "Contactame" : "Contact"}
 				</h3>
 				<div className="flex gap-4 ">
@@ -63,7 +63,7 @@ function Contact() {
 				></textarea>
 				<button
 					type="submit"
-					className="text-center  font-semibold bg-gray-200/75 dark:bg-darkBluePrimary rounded-lg w-full py-4 dark:text-bluePrimary dark:hover:bg-bluePrimary/90 dark:hover:text-white hover:bg-bluePrimary/70 hover:text-white transition-colors"
+					className="text-center  font-semibold bg-gray-200/75 dark:bg-[#1D253D] rounded-lg w-full py-4 dark:text-bluePrimary dark:hover:bg-bluePrimary/90 dark:hover:text-white hover:bg-bluePrimary/70 hover:text-white transition-colors"
 				>
 					Enviar
 				</button>
